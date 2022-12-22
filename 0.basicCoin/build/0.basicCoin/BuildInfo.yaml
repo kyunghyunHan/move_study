@@ -3,10 +3,10 @@ compiled_package_info:
   package_name: 0.basicCoin
   address_alias_instantiation:
     std: "00000000000000000000000000000001"
-  source_digest: FC478EDCF27D20F56706648482B4938B3AD67C279BB75935380C3B3742E1F223
+  source_digest: E660E72842134581B2199C3424440D0D0F4ABB6201B77B917300A9A1FB310A1A
   build_flags:
-    dev_mode: false
-    test_mode: false
+    dev_mode: true
+    test_mode: true
     generate_docs: false
     generate_abis: false
     install_dir: ~
