@@ -1,7 +1,7 @@
 ///in
 module 0x2::bool{
 //literals with explicit annotations;
-   public fun bool_study() : u8 {
+   public fun bool_study() : bool{
          let explicit_u8 = 1u8;
 
 
@@ -9,6 +9,7 @@ module 0x2::bool{
 
 
 
+        
 
 
 
@@ -22,8 +23,7 @@ module 0x2::bool{
 
 
 
-
-         explicit_u8
+         true
     }
 
 
