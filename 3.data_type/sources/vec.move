@@ -4,7 +4,7 @@ module 0x2::vec{
    public fun vec_study() : u8 {
          let explicit_u8 = 1u8;
 
-
+   
 
 
 
@@ -28,4 +28,9 @@ module 0x2::vec{
 
 
    
+}
+script{
+
+
+    fun byte_and_hex_strings(){}
 }
