@@ -1,30 +1,14 @@
 ///in
 module 0x2::signer{
 //literals with explicit annotations;
-   public fun signer_study() : u8 {
+   public fun signer_study() : address {
          let explicit_u8 = 1u8;
+         let a1= @0x1;
+         let a2= @0x2;
 
 
 
-
-//   let a1= @0x1;
-//   let a2= @0x2;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         explicit_u8
+         a1
     }
 
 
