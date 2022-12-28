@@ -1,5 +1,19 @@
 address 0x42 {
 module example {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // all 3 of these functions are equivalent
 
     // when no return type is provided, it is assumed to be `()`
@@ -15,8 +29,36 @@ module example {
     fun returns_3_values(): (u64, bool, address) {
         (0, false, @0x42)
     }
-    fun returns_4_values(x: &u64): (&u64, u8, u128, vector<u8>) {
-        (x, 0, 1, b"foobar")
+
+
+
+  fun returns_unit() {}
+    fun returns_2_values(): (bool, bool) { (true, false) }
+    fun returns_4_values(x: &u64): (&u64, u8, u128, vector<u8>) { (x, 0, 1, b"foobar") }
+
+
+
+    fun example(cond:bool){
+        let ()=();
+        let (x,y):(u8,u64)=(0,1);
+        let (a,b,c,d) = (@0x0,1,false,b"");
+
+
+        ()=();
+        (x,y)= if(cond)(1,2,)else(3,4);
+        (a,b,c,d)= (@0x1,1,true,b"1");
+    }
+
+
+
+    fun example_with_function_calls(){
+        let () = returns_unit();
+        let (x, y): (bool, bool) = returns_2_values();
+        let (a, b, c, d) = returns_4_values(&0);
+
+        () = returns_unit();
+        (x, y) = returns_2_values();
+        (a, b, c, d) = returns_4_values(&1);
     }
 }
 }
