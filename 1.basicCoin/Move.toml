@@ -1,9 +1,9 @@
 [package]
-name = "0.basicCoin"
+name = "1.BasicCoin"
 version = "0.0.0"
 
-[dependencies]
-MoveStdlib = { git = "https://github.com/move-language/move.git", subdir = "language/move-stdlib", rev = "main" }
-
 [addresses]
-NamedAddr = "0xCAFE"
+NamedAddr = "0xDEADBEEF"
+
+[dependencies]
+MoveStdlib = { local = "../../../../move-stdlib/", addr_subst = { "std" = "0x1" } }
